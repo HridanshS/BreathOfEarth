@@ -57,7 +57,7 @@ let AggFreqData; //Graph2
 
 async function loadData() {
     
-    await d3.csv("../../data/pivoted_air_pollution_data.csv").then(data => { //the original dataset was pivoted to generate this dataset. It is a summarized version where each row represents one country
+    await d3.csv("pivoted_air_pollution_data.csv").then(data => { //the original dataset was pivoted to generate this dataset. It is a summarized version where each row represents one country
         Graph1Data = data;
         //console.log(Graph1Data);
         //console.log(typeof(Graph1Data[0].Num_Occurrences));
@@ -98,7 +98,7 @@ async function loadData() {
         });
     
     });
-    await d3.csv("../../data/graph2_pivoted_air_pollution_data.csv").then(data => { //the original dataset was pivoted to generate this dataset. It is a summarized version where each row represents one country
+    await d3.csv("graph2_pivoted_air_pollution_data.csv").then(data => { //the original dataset was pivoted to generate this dataset. It is a summarized version where each row represents one country
         AggFreqData = data;
         //console.log(AggFreqData);
 
@@ -120,7 +120,7 @@ async function loadData() {
         });
     });
 
-    await d3.csv("../../data/graph3_continent_unhealthy_count.csv").then(data => { //the original dataset was pivoted to generate this dataset. It is a summarized version where each row represents one country
+    await d3.csv("graph3_continent_unhealthy_count.csv").then(data => { //the original dataset was pivoted to generate this dataset. It is a summarized version where each row represents one country
         continentAQIData = data;
         //console.log(continentAQIData);
         const options = ["AQI_Unhealthy", "CO_Unhealthy", "PM2.5_Unhealthy", "Ozone_Unhealthy", "NO2_Unhealthy"];
