@@ -210,7 +210,7 @@ function drawAggFreqGraph2() {
 }
 
 function continentAQIGraph3() {
-    updateChart3(continentAQIData, selectedOpt, "Ozone and PM2.5 AQI Values by Continent");
+    updateChart3(continentAQIData, undefined, "Ozone and PM2.5 AQI Values by Continent"); //selectedOpt
 }
 
 
